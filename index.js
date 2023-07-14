@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 var cors = require('cors')
-
+const port = 3000
 
 app.use(cors())
 
@@ -45,5 +45,3 @@ app.get('/user/:id', function (req, res) {
   res.send({ 'userid': q.name })
 })
 
-
-app.listen(3000)
